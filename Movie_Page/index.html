@@ -15,18 +15,6 @@
 
     <!-- IMPOTAÇÃO DOS CSS -->
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="assets/styles/header.css">
-    <link rel="stylesheet" href="assets/styles/inicio.css">
-    <link rel="stylesheet" href="assets/styles/trailers.css">
-    <link rel="stylesheet" href="assets/styles/ep.css">
-    <link rel="stylesheet" href="assets/styles/atores.css">
-    <link rel="stylesheet" href="assets/styles/criticas.css">
-    <link rel="stylesheet" href="assets/styles/cinema.css">
-    <link rel="stylesheet" href="assets/styles/trilha.css">
-    <link rel="stylesheet" href="assets/styles/duvidas.css">
-    <link rel="stylesheet" href="assets/styles/semelhantes.css">
-    <link rel="stylesheet" href="assets/styles/footer.css">
-    <link rel="stylesheet" href="assets/styles/media_query.css">
 
     <title>Phikine | Arcane</title>
 </head>
@@ -36,7 +24,7 @@
     <!-- INÍCIO DE HEADER -->
     <header id="header">
         <div class="container_header_mobile">
-            <a href="../Home_Page/index.html">
+            <a href="../Home_Page/index.html" aria-label="Voltar">
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
             <div class="menu">
@@ -75,13 +63,11 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
-
         </div>
 
         <div class="container_header">
-            <a href="../Home_Page/index.html">
+            <a href="../Home_Page/index.html" aria-label="Voltar">
                 <i class="fa-solid fa-chevron-left"></i>
             </a>
             <nav class="nav_desktop">
@@ -167,12 +153,12 @@
                     <div class="secao_infos">
                         <div class="dispo">
                             <span class="title">Disponível em:</span>
-                            <a href="https://www.netflix.com/br/" rel="no-referrer" target="_blank">
+                            <a href="https://www.netflix.com/br/" rel="noopener" target="_blank">
                                 <img src="assets/midia/inicio/netflix.png" alt="Logo da Netflix">
                             </a>
                         </div>
                         <div class="nota">
-                                <a href="https://www.imdb.com/title/tt11126994/" target="_blank"><span class="title">IMDb:</span></a>
+                                <a href="https://www.imdb.com/title/tt11126994/" target="_blank" rel="noopener"><span class="title">IMDb:</span></a>
                                 <div>
                                     <i class="fa-regular fa-star"></i>
                                     <p>
@@ -232,7 +218,7 @@
         <section id="episodios">
             <div class="infos_ep">
                 <h1 class="h1">Episódios</h1>
-                <select name="temp" id="itemp" class="btn_sections btn_ep">
+                <select name="temp" id="itemp" class="btn_sections btn_ep" aria-label="Selecionar temporada">
                     <option value="temp1">Temporada 1</option>
                     <option value="temp2">Temporada 2</option>
                 </select>
@@ -284,7 +270,7 @@
             <div class="container_atores">
                 <div class="carousel_atores">
                     <div class="slide_atores">
-                        <a href="">
+                        <a href="#" aria-label="Link para Instagram">
                             <img src="assets/midia/atores/Ella.png" alt="">
                         </a>
                         <div class="section_atores">
@@ -297,7 +283,7 @@
                         </div>
                     </div>
                     <div class="slide_atores">
-                        <a href="">
+                        <a href="#" aria-label="Link para Instagram">
                             <img src="assets/midia/atores/heilee.png" alt="">
                         </a>
                         <div class="section_atores">
@@ -310,7 +296,7 @@
                         </div>
                     </div>
                     <div class="slide_atores">
-                        <a href="">
+                        <a href="#" aria-label="Link para Instagram">
                             <img src="assets/midia/atores/katie.png" alt="">
                         </a>
                         <div class="section_atores">
@@ -404,7 +390,7 @@
                 </div>
 
                 <div class="container_indicadores">
-                    <button class="crit_prev">
+                    <button class="crit_prev" aria-label="Anterior">
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <div class="indicadores">
@@ -412,7 +398,7 @@
                         <span class="span_prin"></span>
                         <span class="span_sec"></span>
                     </div>
-                    <button class="crit_next">
+                    <button class="crit_next" aria-label="Próximo">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -435,15 +421,15 @@
                             <p>Imagine Dragons</p>
                         </div>
                         <audio src="assets/midia/trilha/Imagine_Dragons - Enemy.mp3"></audio>
-                        <input type="range" name="progress" id="progress" value="0" min="0" max="100">
+                        <input type="range" name="progress" id="progress" value="0" min="0" max="100" aria-label="Barra de progresso">
                         <div class="controls">
-                            <button id="prev" class="btn_none">
+                            <button id="prev" class="btn_none" aria-label="Anterior">
                                 <i class="fa-solid fa-backward-step"></i>
                             </button>
-                            <button id="play" class="btn_none">
+                            <button id="play" class="btn_none" aria-label="Pausar">
                                 <i class="fa-solid fa-circle-play"></i>
                             </button>
-                            <button id="next" class="btn_none">
+                            <button id="next" class="btn_none" aria-label="Avançar">
                                 <i class="fa-solid fa-forward-step"></i>
                             </button>
                         </div>
@@ -473,7 +459,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="#">
+                        <a href="#" aria-label="Link para escutar">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -486,7 +472,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="">
+                        <a href="#" aria-label="Link para escutar">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -498,7 +484,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="https://youtu.be/D9G1VOjN_84?si=ZTRDzpTYKPOzUR_m" target="_blank" rel="no-referrer">
+                        <a href="https://youtu.be/D9G1VOjN_84?si=ZTRDzpTYKPOzUR_m" target="_blank" aria-label="Link para escutar" rel="noopener">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -510,7 +496,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="">
+                        <a href="#" aria-label="Link para escutar">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -522,7 +508,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="">
+                        <a href="#" aria-label="Link para escutar">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -534,7 +520,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="">
+                        <a href="#" aria-label="Link para escutar">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -546,7 +532,7 @@
                                 <p>Imagine Dragons</p>
                             </div>
                         </div>
-                        <a href="">
+                        <a href="#" aria-label="Link para escutar">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </div>
@@ -659,7 +645,7 @@
         <section id="semelhantes">
             <div class="container_title">
                 <h1 class="h1">Semelhantes</h1>
-                <select name="seme" id="iseme" class="btn_sections">
+                <select name="seme" id="iseme" class="btn_sections" aria-label="Selecionar filme ou série">
                     <option value="filme">Filme</option>
                     <option value="serie">Série</option>
                 </select>
@@ -667,27 +653,31 @@
 
             <div class="container_seme">
                 <div class="item_seme">
-                    <a href=""><img src="assets/midia/semelhantes/samurai.png" alt="" class="img_seme"></a>
-                    <h2>Samurais de Olhos Azuis</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores iste invent</p>
-                </div>
-                <div class="item_seme">
-                    <a href="">
-                        <img src="assets/midia/semelhantes/LDR.png" alt="" class="img_seme">
+                    <a href="#">
+                        <img src="assets/midia/semelhantes/samurai.png" alt="Samurai dos Olhos Azuis" class="img_seme">
                     </a>
                     <h2>Samurais de Olhos Azuis</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores iste invent</p>
                 </div>
                 <div class="item_seme">
-                    <a href=""><img src="assets/midia/semelhantes/nimona.png" alt="" class="img_seme"></a>
+                    <a href="#">
+                        <img src="assets/midia/semelhantes/LDR.png" alt="Love, Death & Robots" class="img_seme">
+                    </a>
                     <h2>Samurais de Olhos Azuis</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores iste invent</p>
                 </div>
                 <div class="item_seme">
-                    <a href="">
-                        <img src="assets/midia/semelhantes/cyberpunk.png" alt="" class="img_seme">
+                    <a href="#">
+                        <img src="assets/midia/semelhantes/nimona.png" alt="Nimona" class="img_seme">
                     </a>
-                    <h2>Samurais de Olhos Azuis</h2>
+                    <h2>Nimona</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores iste invent</p>
+                </div>
+                <div class="item_seme">
+                    <a href="#">
+                        <img src="assets/midia/semelhantes/cyberpunk.png" alt="Cyberpunk: Mercenários" class="img_seme">
+                    </a>
+                    <h2>Cyberpunk</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores iste invent</p>
                 </div>
             </div>
@@ -710,13 +700,13 @@
                 <h4 class="h4">PÁGINAS</h4>
                 <ul>
                     <li>
-                        <a href="landing.html">Início</a>
+                        <a href="../index.html">Início</a>
                     </li>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="../Home_Page/index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Produção</a>
+                        <a href="../Movie_Page/index.html">Produção</a>
                     </li>
                 </ul>
             </div>
@@ -725,7 +715,7 @@
                 <ul class="list_contact">
                     <li>
                         <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/DafnyAlmeida" target="_blank">GitHub</a>
+                        <a href="https://github.com/DafnyAlmeida" target="_blank" rel="noopener">GitHub</a>
                     </li>
                     <li>
                         <i class="fa-brands fa-instagram"></i>
@@ -737,5 +727,4 @@
         <p>© 2025 Phikine. Site desenvolvido para fins experimentais e educacionais.</p>
     </footer>
 </body>
-
 </html>

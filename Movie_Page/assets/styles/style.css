@@ -111,6 +111,7 @@ body, html {
   #HEADER
 \*-----------------------------------*/
 
+
 #header {
     width: calc(100vw - 10px);
     padding: 25px;
@@ -140,6 +141,48 @@ body, html {
     font-size: 0.8em;
 }
 
+/*-----------------------------------*\
+  #HEADER MOBILE
+\*-----------------------------------*/
+
+.container_header_mobile {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#header {
+    padding: 25px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    background-color: rgba(16, 16, 16, 0.975);
+    padding: 30px 40px;
+    border-radius: 10px 0px 0px 10px;
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    border: 1px solid var(--branco);
+    border-right: none;
+    text-align: end;
+    min-width: 260px;
+}
+
+.infos_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_header_mobile {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
 
 /*-----------------------------------*\
   #INÍCIO
@@ -255,17 +298,17 @@ body, html {
 /* INÍCIO */
 
 .infos {
-    width: 90%;
-    background-color: var(--branco-transpa);
-    border: 1px solid var(--cinza);
-    border-radius: var(--radius-15);
-    padding: 40px;
-    margin-block-start: 70px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-content: center;
-    gap: 40px;
+  width: 90%;
+  background-color: var(--branco-transpa);
+  border: 1px solid var(--cinza);
+  border-radius: var(--radius-15);
+  padding: 40px;
+  margin-block-start: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-content: center;
+  gap: 40px;
 }
 
 .prim_infos {
@@ -340,6 +383,7 @@ body, html {
   font-size: 1.1em;
   color: var(--cinza);
 }
+
 
 /*-----------------------------------*\
   #TRAILERS
@@ -1087,3 +1131,7 @@ body, html {
     font-size: 1em;
     margin-block-end: 0.7em;
 }
+
+/*-----------------------------------*\
+  #MEDIA QUERY
+\*-----------------------------------*/
