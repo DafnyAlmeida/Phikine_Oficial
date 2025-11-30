@@ -27,7 +27,7 @@
                 <a href="../index.html" aria-label="Página inicial">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
-                <a href="../Login_Page/index.html"><span class="span_logo">Log In</span></a>
+                <a href="../Login_Page/login.html"><span class="span_logo">Log In</span></a>
             </div>
             <span class="logo_span">Phikine</span>
             <h1>Criar nova conta</h1>
@@ -38,7 +38,7 @@
                     <input type="text" name="nome" id="inome" placeholder="Nome">
                     <label for="igene">Gênero</label>
                     <select name="gene" id="igene" required>
-                        <option value="" disabled selected>Gênero</option>
+                        <option value="" hidden selected>Gênero</option>
                         <option value="feminino">Feminino</option>
                         <option value="masculino">Masculino</option>
                         <option value="nao_bi">Não binário</option>
@@ -58,10 +58,10 @@
                 </div>
 
                 <div class="btn">
-                    <a href="../Home_Page/index.html" class="a_btn">
+                    <a href="../Home_Page/home.html" class="a_btn">
                         <button type="submit" class="criar">Criar conta</button>
                     </a>
-                    <a href="../Login_Page/index.html" class="aviso">Já tem uma conta? <span class="color">Logar</span></a>
+                    <a href="../Login_Page/login.html" class="aviso">Já tem uma conta? <span class="color">Logar</span></a>
                 </div>
             </form>
         </div>
@@ -73,7 +73,7 @@
                 <a href="../index.html" aria-label="Ir para página inicial">
                     <i class="fa-solid fa-arrow-left"></i>
                 </a>
-                <a href="../Login_Page/index.html"><span class="span_logo">Log In</span></a>
+                <a href="../Login_Page/login.html"><span class="span_logo">Log In</span></a>
             </div>
             <div class="slide active">
                 <video src="assets/videos/miranha.mp4" muted autoplay></video>
@@ -109,27 +109,17 @@
 
         const slides = document.querySelectorAll('.slide');
         let currentIndex = 0;
-        const interval = 10000; // tempo entre trocas (em ms)
+        const interval = 10000;
 
         function changeSlide() {
-            // remove a classe ativa do slide atual
             slides[currentIndex].classList.remove('active');
 
-            // avança o índice (ou volta para o início)
             currentIndex = (currentIndex + 1) % slides.length;
 
-            // adiciona a classe ativa ao próximo slide
             slides[currentIndex].classList.add('active');
 
-            // opcional: reiniciar o vídeo quando o slide ficar ativo
-            const video = slides[currentIndex].querySelector('video');
-            if (video) {
-                video.currentTime = 0;
-                video.play();
-            }
         }
 
-        // troca de slide a cada intervalo definido
         setInterval(changeSlide, interval);
     </script>
 </body>
