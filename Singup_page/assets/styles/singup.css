@@ -299,7 +299,7 @@ input:focus::placeholder {
     min-height: 45px;
     cursor: pointer;
     transition: transform .4s ease;
-    width: 100%;
+    width: 60%;
     color: var(--branco);
     background-color: var(--branco-transpa);
 }
